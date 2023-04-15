@@ -1,6 +1,5 @@
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
-import PageProps from './pageprops'
 
 export default function Home() {
   const router = useRouter()
@@ -22,7 +21,7 @@ export default function Home() {
       <ul className="m-20">
         <li>
           <Link 
-            href="/pageprops" 
+            href="/eventstylegeneric" 
             className="p-2 font-bold text-yellow-400 
               border border-green-400 rounded hover:text-slate-100"
           >
