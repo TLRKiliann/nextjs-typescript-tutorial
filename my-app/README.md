@@ -1,6 +1,6 @@
 # Tutorial chapters
 
-Next.js version 13
+Next.js version 13.3
 
 ## state & props
 
@@ -8,7 +8,7 @@ Next.js version 13
 
 - generic props
 
-- style props 
+- style props => /pages/styleprops.tsx + /components/StyleComponent.tsx
 
 ## hooks
 
@@ -19,6 +19,8 @@ Next.js version 13
 - useContext => /pages/documents/heightcomponent.tsx
 
 - useRef
+
+## Miscellaneous
 
 - API context
 
