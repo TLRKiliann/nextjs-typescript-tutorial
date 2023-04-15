@@ -2,21 +2,21 @@
 
 Next.js version 13
 
-## state & props (pages/stateprops/...)
+## state & props
 
-- event props
+- event props => /components/...
 
 - generic props
 
-- style props
+- style props 
 
 ## hooks
 
 - useState
 
-- useReducer
+- useReducer => /pages/documents/sevencomponent.tsx
 
-- useContext
+- useContext => /pages/documents/heightcomponent.tsx
 
 - useRef
 
