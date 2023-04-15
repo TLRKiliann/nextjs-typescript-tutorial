@@ -1,54 +1,42 @@
-import { useState, useEffect } from 'react'
-import FirstComponent from './stateprops/firstcomponent'
-import SecondComponent from './stateprops/secondcomponent'
-import ThirdComponent from './stateprops/thirdcomponent'
+import { useRouter } from 'next/navigation'
+import Link from 'next/link'
+import PageProps from './pageprops'
+//import PageHook from './pagehook'
 
 export default function Home() {
+  const router = useRouter()
 
-  const [click, setClick] = useState<boolean>(false)
-  const [initVal, setInitVal] = useState<string>("Enter something new...")
-  const [arrayTodo, setArrayTodo] = useState<string[]>([])
-
-  const handleClick = () => {
-    setClick(!click)
-  };
-
-  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setInitVal(event.target.value)
-  };
-
-  const handleInputBtn = () => {
-    setArrayTodo(initVal)
-    setInitVal("")
-  };
-
+  const handlePageHook = () => {
+    router.push('/pagehook');
+  }
   return (
-    <main className="text-center font-bold text-blue-400">
-      <div>
-        <h1 className="text-xl">TypeScript NextJS Tutorial</h1>
-        <h2 className="m-4">Reusable Components</h2>
+    <main>
 
-        <FirstComponent
-          click={click}
-          handleClick={handleClick}
-        />
-
-        <SecondComponent 
-          initVal={initVal} 
-          handleInputChange={handleInputChange} 
-          handleInputBtn={handleInputBtn} 
-          arrayTodo={arrayTodo}
-        />
-
-        <ThirdComponent 
-          initVal={initVal} 
-          handleInputChange={handleInputChange} 
-          handleInputBtn={handleInputBtn} 
-          arrayTodo={arrayTodo}
-          click={click}
-          handleClick={handleClick}
-        />
-      </div>
+      <h1 className="p-4 text-3xl font-serif text-blue-400 bg-blue-900">
+        TypeScript NextJS Tutorial
+      </h1>
+      
+      <ul className="m-10">
+        <li>
+          <Link 
+            href="/pageprops" 
+            className="p-2 font-bold text-yellow-400 
+              border border-green-400 rounded hover:text-slate-100"
+          >
+            Page Props
+          </Link>
+        </li>
+        <li>
+          <button 
+            onClick={handlePageHook} 
+            className="mt-10 p-2 font-bold text-yellow-400 
+              border border-green-400 rounded hover:text-slate-100"
+          >
+            Page Hook<
+          /button>
+        </li>
+      </ul>
+      
     </main>
   )
 }

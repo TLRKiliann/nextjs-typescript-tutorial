@@ -1,5 +1,5 @@
 import React from 'react'
-import { InputProps } from '../../types/types.propsvalues'
+import { InputProps } from '../types/types.propsvalues'
 
 const SecondComponent = (props: InputProps) => {
 
@@ -17,7 +17,7 @@ const SecondComponent = (props: InputProps) => {
           className="mt-4 mr-80 ml-80 p-2 text-lg bg-slate-600 border rounded-lg">
           Enter
         </button>
-        <span>{props.arrayTodo}</span>
+        <span className="text-orange-400">{props.arrayTodo}</span>
       </div>
     </>
   )

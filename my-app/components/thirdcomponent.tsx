@@ -1,5 +1,5 @@
 import React from 'react'
-import { MixedProps } from '../../types/types.propsvalues'
+import { MixedProps } from '../types/types.propsvalues'
 //import dynamic from 'next/dynamic'
 
 const ThirdComponent = ({ 
@@ -33,7 +33,7 @@ const ThirdComponent = ({
           {click ? "Clicked" : "Click Me !!!"}
         </button>
         
-        <span>{arrayTodo}</span>
+        <span className="text-orange-400">{arrayTodo}</span>
       </div>
     </>
   )
