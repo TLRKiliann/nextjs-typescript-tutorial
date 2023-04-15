@@ -1,7 +1,6 @@
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import PageProps from './pageprops'
-//import PageHook from './pagehook'
 
 export default function Home() {
   const router = useRouter()
@@ -11,12 +10,16 @@ export default function Home() {
   }
   return (
     <main>
+      <div className="p-4 bg-slate-800 shadow shadow-slate-50/20">
+        <h1 className="text-3xl font-serif text-blue-400">
+          TypeScript NextJS Tutorial
+        </h1>
+        <h3 className="p-1">
+          (look at the README.md page)
+        </h3>
+      </div>
 
-      <h1 className="p-4 text-3xl font-serif text-blue-400 bg-blue-900">
-        TypeScript NextJS Tutorial
-      </h1>
-      
-      <ul className="m-10">
+      <ul className="m-20">
         <li>
           <Link 
             href="/pageprops" 
