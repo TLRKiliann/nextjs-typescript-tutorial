@@ -1,5 +1,5 @@
 import React from 'react'
-import { ButtonProps } from '../types/types.values'
+import { ButtonProps } from '../types/types.propsvalues'
 
 const FirstComponent = (props: ButtonProps) => {
   return (
