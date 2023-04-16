@@ -46,6 +46,14 @@ const PageHook = () => {
         </li>
 
         <li className="m-2 text-xl hover:text-orange-400">
+          <Link href="/documents/userefcomponent">useRef 1</Link>
+        </li>
+
+        <li className="m-2 text-xl hover:text-orange-400">
+          <Link href="/documents/usereftimercomponent">useRef with timer</Link>
+        </li>
+
+        <li className="m-2 text-xl hover:text-orange-400">
           <button type="button" onClick={handleContext}>useContext (result)</button>
         </li>
 
