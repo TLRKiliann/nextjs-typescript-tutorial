@@ -42,6 +42,11 @@ const PageHook = () => {
         </li>
 
         <li className="m-2 text-xl hover:text-orange-400">
+          <Link href="/documents/callreducer">useReducer (interface)</Link>
+        </li>
+
+
+        <li className="m-2 text-xl hover:text-orange-400">
           <Link href="/documents/heightcomponent">useContext (code img)</Link>
         </li>
 
